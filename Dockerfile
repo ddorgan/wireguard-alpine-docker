@@ -1,4 +1,4 @@
-from alpine
+FROM alpine
 
 RUN apk add --no-cache wireguard-tools bash wget openresolv iptables
 
