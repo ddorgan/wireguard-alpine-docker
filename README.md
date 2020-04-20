@@ -13,8 +13,8 @@ Instead it uses the base alpine image and adds these packages via `apk`
 
 Assuming you will upload to dockerhub are already logged in run the commands:
 
-`docker build -t username/image_name:version .`
-`docker push username/image_name:version`
+```docker build -t username/image_name:version .```
+```docker push username/image_name:version```
 
 ### Usage
 
