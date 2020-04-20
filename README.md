@@ -1,6 +1,6 @@
 ### Introduction
 
-This is a small alpine linux image (12MB!) with the wireguard-tools and iptables packages preinstalled. The configuration is expected to come from a kubernetes ConfigMap.
+This is a small alpine linux image (12MB!) with the wireguard-tools and iptables packages preinstalled.
 
 This is based on https://github.com/felixfischer/wireguard-docker.git, however there are two major changes:
 
