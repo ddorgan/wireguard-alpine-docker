@@ -1,6 +1,6 @@
 ### Introduction
 
-This is a small alpine linux image with the wireguard-tools and iptables packages preinstalled. The configuration is expected to come from a kubernetes ConfigMap.
+This is a small alpine linux image (12MB!) with the wireguard-tools and iptables packages preinstalled. The configuration is expected to come from a kubernetes ConfigMap.
 
 This is based on https://github.com/felixfischer/wireguard-docker.git, however there are two major changes:
 
@@ -15,3 +15,7 @@ Assuming you will upload to dockerhub are already logged in run the commands:
 
 `docker build -t username/image_name:version .`
 `docker push username/image_name:version`
+
+### Usage
+
+This can be used within a kubernetes cluster with a ConfigMap or locally using a mounted file for `/etc/wireguard/wg0/conf`
